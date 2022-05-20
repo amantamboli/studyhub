@@ -1,7 +1,7 @@
 # from curses import flash
-from gc import is_finalized
-from multiprocessing import context
-from pickle import TRUE
+
+# from multiprocessing import context
+# from pickle import TRUE
 from django.shortcuts import render,redirect
 from django.urls import set_script_prefix
 from . forms import *

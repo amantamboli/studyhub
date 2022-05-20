@@ -1,6 +1,6 @@
 from dataclasses import field, fields
 from random import choices
-from tkinter import Widget
+# from tkinter import Widget
 from django import forms
 from . models import *
 from django.contrib.auth.forms import UserCreationForm
