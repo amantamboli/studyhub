@@ -2,6 +2,7 @@
 
 # from multiprocessing import context
 # from pickle import TRUE
+from math import remainder
 from django.shortcuts import render,redirect
 from django.urls import set_script_prefix
 from . forms import *
@@ -12,6 +13,7 @@ import requests
 import sys
 import wikipedia
 from django.contrib.auth.decorators import login_required
+from datetime import date
 
 # Create your views here.
 def home(request):
@@ -69,6 +71,17 @@ def homework(request):
             
     
     homework = Homework.objects.filter(user=request.user)
+    
+    for home in homework:
+        reminder = []
+        d1 = home.due.date()
+        d2 = date.today()
+        diff = d1 - d2
+        if diff.days > 0:
+            flag = True
+            reminder.append(home)
+        
+    
     if len(homework) == 0:
         homework_done = True
     else:
@@ -76,12 +89,15 @@ def homework(request):
     context = {
         'homeworks': homework,
         'homeworks_done' :homework_done,
+        'flag' : flag,
+        'reminder' :reminder,
         'form':form,
     }
     return render(request,'dashboard/homework.html',context) 
 
 @login_required
 def update_homework(request,pk=None):
+    
     homework = Homework.objects.get(id=pk)
     if homework.is_finished == True:
         homework.is_finished = False
@@ -94,6 +110,7 @@ def update_homework(request,pk=None):
 def delete_homework(request,pk=None):
     Homework.objects.get(id=pk).delete()
     return redirect('homework')
+
 
 
 def youtube(request):

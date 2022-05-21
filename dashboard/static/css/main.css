@@ -46,6 +46,18 @@ a:hover {
     color: black;
 }
 
+td a{
+    color: white;
+}
+td a:hover{
+    color: gray;
+}
+ .link {
+    color: white;
+ }
+ .link:hover{
+     color: wheat;
+ }
 
 
 .custom-header:hover {
