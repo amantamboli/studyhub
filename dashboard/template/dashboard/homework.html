@@ -20,7 +20,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary"> <a class="link" href="mailto:">Submit homework</a> </button>
+          
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
                 <th scope="col">Due</th>
                 <th scope="col">Status</th>
                 <th scope="col">Delete</th>
-                <th scope="col">Submit HW</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -67,7 +67,7 @@
                     </a>
                 </td>
                 <td><a href="{% url 'delete-homework' homework.id %}"><i class="fa fa-trash fa-2x"></i></a></td>
-                <td ><a href="mailto:" >Submit</a></td>
+                
             </tr>
             {% endfor %}
         </tbody>

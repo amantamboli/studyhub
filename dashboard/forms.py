@@ -17,7 +17,7 @@ class HomeworkForm(forms.ModelForm):
     class Meta:
         model = Homework
         widgets = {'due':DataInput()}
-        fields = ['subject','title','description','due','is_finished']
+        fields = ['subject','title','description','due']
 
 class DashboardFom(forms.Form):
     text = forms.CharField(max_length=100,label="Enter your Search : ")
@@ -25,7 +25,7 @@ class DashboardFom(forms.Form):
 class TodoForm(forms.ModelForm):
     class Meta:
         model = Todo
-        fields = ['title','is_finished'] 
+        fields = ['title'] 
 
 class ConversionForm(forms.Form):
     CHOICES = [('length','Length'),('mass','Mass')]

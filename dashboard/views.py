@@ -71,7 +71,7 @@ def homework(request):
             
     
     homework = Homework.objects.filter(user=request.user)
-    
+    flag = False
     for home in homework:
         reminder = []
         d1 = home.due.date()
