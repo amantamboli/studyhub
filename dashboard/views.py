@@ -1,7 +1,3 @@
-# from curses import flash
-
-# from multiprocessing import context
-# from pickle import TRUE
 from math import remainder
 from django.shortcuts import render,redirect
 from django.urls import set_script_prefix
@@ -72,13 +68,17 @@ def homework(request):
     
     homework = Homework.objects.filter(user=request.user)
     flag = False
+    reminder = []
     for home in homework:
-        reminder = []
+        
         d1 = home.due.date()
         d2 = date.today()
         diff = d1 - d2
         if diff.days > 0:
             flag = True
+            if(home.is_finished):
+                flag = False
+            
             reminder.append(home)
         
     
