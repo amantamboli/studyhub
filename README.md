@@ -59,5 +59,5 @@ python manage.py migrate
 python manage.py runserver
 ```
     
-In your web browser enter the address : <code> ```bash http://localhost:8000 ```</code> or <code>http://127.0.0.1:8000/</code>
+In your web browser enter the address : <code> ``` http://localhost:8000 ```</code> or <code>``` http://127.0.0.1:8000/```</code>
 
