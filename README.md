@@ -35,6 +35,7 @@ connection and brewers, this application is available for them 24x7.
 <h4>Prerequisites</h4>
 <code>python== 3.5 or up and django==2.0 or up</code>
 
+
 Clone the repository
 ```bash
 git clone git@github.com:amantamboli/studyhub.git
@@ -55,6 +56,8 @@ python manage.py makemigrations
 ```bash
 python manage.py migrate
 ```
+
+Finally run
 ```bash
 python manage.py runserver
 ```
