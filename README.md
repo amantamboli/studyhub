@@ -64,3 +64,4 @@ python manage.py runserver
     
 In your web browser enter the address : <code> ``` http://localhost:8000 ```</code> or <code>``` http://127.0.0.1:8000/```</code>
 
+### If you're seeing this, don't forget to add ⭐ to the repository.

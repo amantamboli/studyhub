@@ -51,12 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'studentstudyportal.urls'
+ROOT_URLCONF = 'studyhub.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"E:/msc/msc fy/studentstudyportal/dashboard/template")],
+        'DIRS': [os.path.join(BASE_DIR,"E:/msc/msc fy/studentstudyportal/dashboard/template")], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,7 +70,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'studentstudyportal.wsgi.application'
+WSGI_APPLICATION = 'studyhub.wsgi.application'
 
 
 # Database
