@@ -32,14 +32,16 @@ connection and brewers, this application is available for them 24x7.
 
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
 
-<h2>Prerequisites</h2>
+<h4>Prerequisites</h4>
 <code>python== 3.5 or up and django==2.0 or up</code>
 
+Clone the repository
 ```bash
-git@github.com:amantamboli/studyhub.git
+git clone git@github.com:amantamboli/studyhub.git
 ```
 Create virtual environment and activate it.
 
+install all dependancies using
 ```bash
 pip install -r requirement.txt
 ```
@@ -48,11 +50,13 @@ pip install -r requirement.txt
 
 ```bash
 python manage.py makemigrations
-
+```
+```bash
 python manage.py migrate
-
+```
+```bash
 python manage.py runserver
 ```
     
-In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/
+In your web browser enter the address : <code>http://localhost:8000</code> or <code>http://127.0.0.1:8000/</code>
 
