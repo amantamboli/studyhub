@@ -42,13 +42,13 @@ git clone git@github.com:amantamboli/studyhub.git
 
 Create virtual environment and activate it.
 
-Istall all dependancies using
+Install all dependancies using
 ```bash
 pip install -r requirement.txt
 ```
 
 
-
+To migrate the database
 ```bash
 python manage.py makemigrations
 ```
@@ -59,5 +59,5 @@ python manage.py migrate
 python manage.py runserver
 ```
     
-In your web browser enter the address : <code> ```bashhttp://localhost:8000 ```</code> or <code>http://127.0.0.1:8000/</code>
+In your web browser enter the address : <code> ```bash http://localhost:8000 ```</code> or <code>http://127.0.0.1:8000/</code>
 
