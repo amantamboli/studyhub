@@ -39,9 +39,10 @@ Clone the repository
 ```bash
 git clone git@github.com:amantamboli/studyhub.git
 ```
+
 Create virtual environment and activate it.
 
-install all dependancies using
+Istall all dependancies using
 ```bash
 pip install -r requirement.txt
 ```
@@ -58,5 +59,5 @@ python manage.py migrate
 python manage.py runserver
 ```
     
-In your web browser enter the address : <code>http://localhost:8000</code> or <code>http://127.0.0.1:8000/</code>
+In your web browser enter the address : <code> ```bashhttp://localhost:8000 ```</code> or <code>http://127.0.0.1:8000/</code>
 
