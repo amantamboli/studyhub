@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard',
-    'crispy_forms'
+    'crispy_forms',
+    'crispy_bootstrap4' #run -> pip install crispy-bootstrap4
 ]
 
 MIDDLEWARE = [
